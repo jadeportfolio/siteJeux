@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Jeux</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JaajGmaes - Jeux</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS séparé -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Bienvenue sur Mes Jeux !</h1>   
+<header class="bg-dark text-white text-center py-4 mb-4">
+  <h1>🎮 Ma Galerie de Jeux</h1>
+  <p>Clique sur un jeu pour y jouer en ligne</p>
+</header>
 
-<h2>Voici la liste des différents jeux :</h2>
+<main class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
 
-<a href="JeuxDossier/2048/2048.html">Jeu de snake</a>
-<a href="JeuxDossier/Agario/agario.html">Agario</a>
+    <!-- Agario -->
+    <div class="col">
+      <a href="https://jaajgames.onrender.com" target="_blank" class="text-decoration-none">
+        <div class="card h-100 shadow-sm hover-card">
+          <img src="AgarioFOND.png" class="card-img-top" alt="Agar.io">
+          <div class="card-body text-center">
+            <h5 class="card-title">Agario Clone</h5>
+            <p class="card-text">Joue avec tes amis, mangez vous !</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Minecraft -->
+    <div class="col">
+      <div class="card h-100 shadow-sm hover-card coming-soon">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" class="card-img-top" alt="Minecraft Clone">
+        <div class="card-body text-center">
+          <h5 class="card-title">Minecraft Clone</h5>
+          <p class="card-text">Coming Soon 🚀</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2048 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm hover-card coming-soon">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/2048-game-screenshot.png" class="card-img-top" alt="2048">
+        <div class="card-body text-center">
+          <h5 class="card-title">2048</h5>
+          <p class="card-text">Coming Soon 🚀</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
